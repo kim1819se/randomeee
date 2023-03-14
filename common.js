@@ -13,25 +13,25 @@ var click7 = 0;
 function clickId(id, type) {
     console.log("id : " + id);
     switch(id) {
-        case 'type1':
+        case 'soojin':
             click1 += 1;
             break;
-        case 'type2':
+        case 'jimin':
             click2 += 1;
             break;
-        case 'type3':
+        case 'zoa':
             click3 += 1;
             break;
-        case 'type4':
+        case 'jaehee':
             click4 += 1;
             break;
-        case 'type5':
+        case 'jihan':
             click5 += 1;
             break;
-        case 'type6':
+        case 'soeun':
             click6 += 1;
             break;
-        case 'type7':
+        case 'nam':
             click7 += 1;
             break;
         
@@ -44,22 +44,29 @@ function clickId(id, type) {
             break;
         case '2':
             document.getElementById('ch_id_2').style.display = "none";
+            document.getElementById('ch_id_3').style.display = "block";
             break;
         case '3':
-            //click3 += 1;
+            document.getElementById('ch_id_3').style.display = "none";
+            document.getElementById('ch_id_4').style.display = "block";
             break;
         case '4':
-            //click4 += 1;
+            document.getElementById('ch_id_4').style.display = "none";
+            document.getElementById('button_area').style.display = "block";
+            //document.getElementById('ch_id_5').style.display = "block";
             break;
+			/*
         case '5':
-            //click5 += 1;
+            document.getElementById('ch_id_5').style.display = "none";
+            document.getElementById('ch_id_6').style.display = "block";
             break;
         case '6':
-            //click6 += 1;
+            document.getElementById('ch_id_6').style.display = "none";
+            document.getElementById('ch_id_7').style.display = "block";
             break;
         case '7':
-            c//lick7 += 1;
-            break;
+            document.getElementById('ch_id_7').style.display = "none";
+            break;*/
         
     }
     /*
@@ -75,6 +82,7 @@ function clickId(id, type) {
 }
 
 var click_arr = new Array();
+
 function submit() {
     click_arr[0] = click1;
     click_arr[1] = click2;
@@ -88,7 +96,31 @@ function submit() {
     console.log("click max : " + click_max);
     for (var i = 0; i < 8; i++) {
         if (click_arr[i] == click_max) {
-            console.log("위치 : " + i + " 입니다.");
+            //alert("위치 : " + i + " 입니다. 그리고 최대 클릭은 : " + click_max);
+			    switch(i) {
+					case 0:
+						alert('이수진');
+						break;
+					case 1:
+						alert('김지민');
+						break;
+					case 2:
+						alert('조혜원');
+						break;
+					case 3:
+						alert('이재희');
+						break;
+					case 4:
+						alert('한지효');
+						break;
+					case 5:
+						alert('박소은');
+						break;
+					case 6:
+						alert('남자');
+						break;
+					
+				}
         }
     }
 }

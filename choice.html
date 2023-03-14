@@ -5,28 +5,80 @@
         .dpl_none {
             display: none;
         }
-        .ch_1 {background-color: red;}
-        .ch_2 {background-color: blue;}
+        body {background-color: #e3e7ff;}
     </style>
 </head>
 
 <body>
-<div class="ch_1" id="ch_id_1">
-    <img src="1sj.png" id="soojin" />
-    <img src="1mm.png" id="jimin" />
-    <img src="1zo.png" id="zoa" />
-    <img src="1jh.png" id="jaehee" />
-    <img src="1ji.png" id="jihan" />
-    <img src="1so.png" id="soeun" />
+<div class="ch_1" id="ch_id_1"><p>1단계</p>
+    <img src="1sj.png" id="soojin" onclick="clickId(this.id, '1');"/>
+    <img src="1mm.png" id="jimin" onclick="clickId(this.id, '1');"/>
+    <img src="1zo.png" id="zoa" onclick="clickId(this.id, '1');"/>
+    <img src="1jh.png" id="jaehee" onclick="clickId(this.id, '1');"/>
+    <img src="1ji.png" id="jihan" onclick="clickId(this.id, '1');"/>
+    <img src="1so.png" id="soeun" onclick="clickId(this.id, '1');"/>
+    <img src="1nam.png" id="nam" onclick="clickId(this.id, '1');"/>
 </div>
-<div class="ch_2 dpl_none" id="ch_id_2">
-    <img src="image/tyle1.jpg" id="type1" />
-    <img src="image/tyle2.jpg" id="type2" />
-    <img src="image/tyle3.jpg" id="type3" />
-    <img src="image/tyle4.jpg" id="type4" />
-    <img src="image/tyle5.jpg" id="type5" />
-    <img src="image/tyle6.jpg" id="type6" />
-    <img src="image/tyle7.jpg" id="type7" />
+<div class="ch_2 dpl_none" id="ch_id_2"><p>2단계</p>
+    <img src="2sj.png" id="soojin" onclick="clickId(this.id, '2');"/>
+    <img src="2mm.png" id="jimin" onclick="clickId(this.id, '2');"/>
+    <img src="2zo.png" id="zoa" onclick="clickId(this.id, '2');"/>
+    <img src="2jh.png" id="jaehee" onclick="clickId(this.id, '2');"/>
+    <img src="2ji.png" id="jihan" onclick="clickId(this.id, '2');"/>
+    <img src="2so.png" id="soeun" onclick="clickId(this.id, '2');"/>
+    <img src="2nam.png" id="nam" onclick="clickId(this.id, '2');"/>
 </div>
-<button >submit</button>
+<div class="ch_3 dpl_none" id="ch_id_3"><p>3단계</p>
+    <img src="3sj.png" id="soojin" onclick="clickId(this.id, '3');"/>
+    <img src="3mm.png" id="jimin" onclick="clickId(this.id, '3');"/>
+    <img src="3zo.png" id="zoa" onclick="clickId(this.id, '3');"/>
+    <img src="3jh.png" id="jaehee" onclick="clickId(this.id, '3');"/>
+    <img src="3ji.png" id="jihan" onclick="clickId(this.id, '3');"/>
+    <img src="3so.png" id="soeun" onclick="clickId(this.id, '3');"/>
+    <img src="3nam.png" id="nam" onclick="clickId(this.id, '3');"/>
+</div>
+<div class="ch_4 dpl_none" id="ch_id_4"><p>4단계</p>
+    <img src="4sj.png" id="soojin" onclick="clickId(this.id, '4');"/>
+    <img src="4mm.png" id="jimin" onclick="clickId(this.id, '4');"/>
+    <img src="4zo.png" id="zoa" onclick="clickId(this.id, '4');"/>
+    <img src="4jh.png" id="jaehee" onclick="clickId(this.id, '4');"/>
+    <img src="4ji.png" id="jihan" onclick="clickId(this.id, '4');"/>
+    <img src="4so.png" id="soeun" onclick="clickId(this.id, '4');"/>
+    <img src="4nam.png" id="nam" onclick="clickId(this.id, '4');"/>
+</div>
+<!-- 
+<div class="ch_5 dpl_none" id="ch_id_5"><p>5단계</p>
+    <img src="5sj.png" id="soojin" onclick="clickId(this.id, '5');"/>
+    <img src="5mm.png" id="jimin" onclick="clickId(this.id, '5');"/>
+    <img src="5zo.png" id="zoa" onclick="clickId(this.id, '5');"/>
+    <img src="5jh.png" id="jaehee" onclick="clickId(this.id, '5');"/>
+    <img src="5ji.png" id="jihan" onclick="clickId(this.id, '5');"/>
+    <img src="5so.png" id="soeun" onclick="clickId(this.id, '5');"/>
+    <img src="5nam.png" id="nam" onclick="clickId(this.id, '5');"/>
+</div>
+<div class="ch_6 dpl_none" id="ch_id_6"><p>6단계</p>
+    <img src="6sj.png" id="soojin" onclick="clickId(this.id, '6');"/>
+    <img src="6mm.png" id="jimin" onclick="clickId(this.id, '6');"/>
+    <img src="6zo.png" id="zoa" onclick="clickId(this.id, '6');"/>
+    <img src="6jh.png" id="jaehee" onclick="clickId(this.id, '6');"/>
+    <img src="6ji.png" id="jihan" onclick="clickId(this.id, '6');"/>
+    <img src="6so.png" id="soeun" onclick="clickId(this.id, '6');"/>
+    <img src="6nam.png" id="nam" onclick="clickId(this.id, '6');"/>
+</div>
+<div class="ch_7 dpl_none" id="ch_id_7"><p>7단계</p>
+    <img src="7sj.png" id="soojin" onclick="clickId(this.id, '7');"/>
+    <img src="7mm.png" id="jimin" onclick="clickId(this.id, '7');"/>
+    <img src="7zo.png" id="zoa" onclick="clickId(this.id, '7');"/>
+    <img src="7jh.png" id="jaehee" onclick="clickId(this.id, '7');"/>
+    <img src="7ji.png" id="jihan" onclick="clickId(this.id, '7');"/>
+    <img src="7so.png" id="soeun" onclick="clickId(this.id, '7');"/>
+    <img src="7nam.png" id="nam" onclick="clickId(this.id, '7');"/>
+</div>
+ -->
+
+
+<div class="sbm_btn dpl_none" id="button_area">
+<button onclick="submit();">submit</button>
+</div>
+
 </body>
