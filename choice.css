@@ -1,0 +1,9 @@
+img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+}
+button {
+    backgroud-color: cadetblue;
+    font-size: 15px;
+}
