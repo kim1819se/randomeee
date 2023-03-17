@@ -1,5 +1,11 @@
+
+
 function moveChoice() {
     location.href = 'choice.html';
+}
+
+function home() {
+    location.href = 'index.html';
 }
 
 var click1 = 0;
@@ -94,30 +100,38 @@ function submit() {
     console.log(click_arr);
     var click_max = Math.max.apply(null, click_arr);
     console.log("click max : " + click_max);
+    document.getElementById('button_area').style.display = "none";
     for (var i = 0; i < 8; i++) {
         if (click_arr[i] == click_max) {
             //alert("위치 : " + i + " 입니다. 그리고 최대 클릭은 : " + click_max);
 			    switch(i) {
 					case 0:
-						alert('이수진');
+						//alert('이수진');
+						document.getElementById('chc_00').style.display = "block";
 						break;
 					case 1:
-						alert('김지민');
+						//alert('김지민');
+						document.getElementById('chc_01').style.display = "block";
 						break;
 					case 2:
-						alert('조혜원');
+						//alert('조혜원');
+						document.getElementById('chc_02').style.display = "block";
 						break;
 					case 3:
-						alert('이재희');
+						//alert('이재희');
+						document.getElementById('chc_03').style.display = "block";
 						break;
 					case 4:
-						alert('한지효');
+						//alert('한지효');
+						document.getElementById('chc_04').style.display = "block";
 						break;
 					case 5:
-						alert('박소은');
+						//alert('박소은');
+						document.getElementById('chc_05').style.display = "block";
 						break;
 					case 6:
-						alert('남자');
+						//alert('남자');
+						document.getElementById('chc_06').style.display = "block";
 						break;
 					
 				}
